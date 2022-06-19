@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Player</title>
+  <link rel="stylesheet" type="text/css" href="musicPlayerStyle.css" />
+
+  <scr ipt src="https://kit.fontawesome.com/d76e83a2af.js" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+  <!--header section-->
+  <header>
+    <div id="navbar">
+      <img id="website-icon" src="MusicPlayer-Icon.png" alt="Website-icon" />
+      <nav>
+        <ul>
+          <li style="float: left">FAvourites</li>
+          <li style="float: right"><i class="fa-solid fa-bell"></i></li>
+          <li style="float: right">your profile icon</li>
+          <div class="search-container">
+            <form style="float: right" action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search" />
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!--Content-->
+  <div class="content-shown">
+    <!--Main content-->
+    <main>
+      <div>
+        <div class="carousal">
+          <div class="slideshow">
+            <div class="slideitem"><img src="/Photos/album1.jpg" alt="" /></div>
+            <div class="slideitem"><img src="/Photos/album3.avif" alt="" /></div>
+            <div class="slideitem"><img src="/Photos/album4.jpg" alt="" /></div>
+          </div>
+        </div>
+
+        <!--New Songs-->
+        <div id="new_release">
+          <h2>New Release</h2>
+          <div id="new_song_section">
+            <div class="newsong">
+              <div class="song_img"><img src="/Photos/newimage.jpg" alt="" /></div>
+              <div class="song_title">
+                <p>Onism <i class="fas fa-ellipsis-h"></i></p>`
+
+                <p class="date_new_release">21 May 2022</p>
+
+              </div>
+            </div>
+
+            <div class="newsong">
+              <div class="song_img"><img src="/Photos/newimage.jpg" alt="" /></div>
+              <div class="song_title">
+                <p>Onism <i class="fas fa-ellipsis-h"></i></p>
+
+                <p>21 May 2022</p>
+
+              </div>
+            </div>
+
+            <div class="newsong">
+              <div class="song_img"><img src="/Photos/newimage.jpg" alt="" /></div>
+              <div class="song_title">
+                <p>Onism <i class="fas fa-ellipsis-h"></i></p>
+
+                <p>21 May 2022</p>
+
+              </div>
+            </div>
+
+
+            <div class="newsong">
+              <div class="song_img"><img src="/Photos/newimage.jpg" alt="" /></div>
+              <div class="song_title">
+                <p>Onism <i class="fas fa-ellipsis-h"></i></p>
+
+                <p>21 May 2022</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Artist List-->
+        <div id="artist_List">
+          <h2>Artist</h2>
+          <div id="artist_section">
+            <div class="artist">
+              <div class="artist_img">
+                <img src="/Photos/arijitSingh.webp" alt="" />
+              </div>
+              <div class="artist_name">
+                <p>Arijit Singh</p>
+              </div>
+            </div>
+
+            <div class="artist">
+              <div class="artist_img"><img src="/Photos/apDhillon.webp" alt="" /></div>
+              <div class="artist_name">
+                <p>AP Dhillon</p>
+              </div>
+            </div>
+            <div class="artist">
+              <div class="artist_img"><img src="/Photos/sonuNigam.webp" alt="" /></div>
+              <div class="artist_name">
+                <p>Sonu Nigam</p>
+              </div>
+            </div>
+            <div class="artist">
+              <div class="artist_img">
+                <img src="/Photos/jubinNautiyal.jpg" alt="" />
+              </div>
+              <div class="artist_name">
+                <p>Jubin Nautiyal</p>
+              </div>
+            </div>
+            <div class="artist">
+              <div class="artist_img">
+                <img src="/Photos/darshanRaval.jpg" alt="" />
+              </div>
+              <div class="artist_name">
+                <p>Darshan Raval</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Song Types-->
+        <div id="song_classification">
+          <div id="song_section">
+            <div class="song_type">
+              <div class="song_type_img">
+                <h2>Electronic</h2>
+                <img src="/Photos/electronic-music.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="song_type">
+              <div class="song_type_img">
+                <h2>Classical</h2>
+                <img src="/Photos/classical-music.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="song_type">
+              <div class="song_type_img">
+                <h2>Pop</h2>
+                <img src="/Photos/pop-music.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="song_type">
+              <div class="song_type_img">
+                <h2>Jazz</h2>
+                <img src="/Photos/jazz-music.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+    <!--Queue-->
+    <aside>
+      <div id="queue">
+        <h1>Queue <i class="fa-solid fa-angle-down">Queue</i></h1>
+        <div id="queue_section">
+          <div class="queue_song">
+            <p class="counter">01</p>
+            <div class="queue_song_img"><img src="/Photos/newimage.jpg" alt="" /></div>
+            <div class="queue_song_name">
+              <p>Mirage</p>
+            </div>
+          </div>
+
+          <div class="queue_song">
+            <p class="counter">01</p>
+            <div class="queue_song_img"><img src="/Photos/newimage.jpg" alt="" /></div>
+            <div class="queue_song_name">
+              <p>Mirage</p>
+            </div>
+          </div>
+
+          <div class="queue_song">
+            <p class="counter">01</p>
+            <div class="queue_song_img"><img src="/Photos/newimage.jpg" alt="" /></div>
+            <div class="queue_song_name">
+              <p>Mirage</p>
+            </div>
+          </div>
+
+          <div class="queue_song">
+            <p class="counter">01</p>
+            <div class="queue_song_img"><img src="/Photos/newimage.jpg" alt="" /></div>
+            <div class="queue_song_name">
+              <p>Mirage</p>
+            </div>
+          </div>
+
+          <div class="queue_song">
+            <p class="counter">01</p>
+            <div class="queue_song_img"><img src="/Photos/newimage.jpg" alt="" /></div>
+            <div class="queue_song_name">
+              <p>Mirage</p>
+            </div>
+          </div>
+
+          <div class="queue_song">
+            <p class="counter">01</p>
+            <div class="queue_song_img"><img src="/Photos/newimage.jpg" alt="" /></div>
+            <div class="queue_song_name">
+              <p>Mirage</p>
+            </div>
+          </div>
+
+          <div class="queue_song">
+            <p class="counter">01</p>
+            <div class="queue_song_img"><img src="/Photos/newimage.jpg" alt="" /></div>
+            <div class="queue_song_name">
+              <p>Mirage</p>
+            </div>
+          </div>
+
+          <div class="queue_song">
+            <p class="counter">01</p>
+            <div class="queue_song_img"><img src="/Photos/newimage.jpg" alt="" /></div>
+            <div class="queue_song_name">
+              <p>Mirage</p>
+            </div>
+          </div>
+          
+          <div class="queue_song">
+            <p class="counter">01</p>
+            <div class="queue_song_img"><img src="/Photos/newimage.jpg" alt="" /></div>
+            <div class="queue_song_name">
+              <p>Mirage</p>
+            </div>
+          </div>
+
+          <div class="queue_song">
+            <p class="counter">01</p>
+            <div class="queue_song_img"><img src="/Photos/newimage.jpg" alt="" /></div>
+            <div class="queue_song_name">
+              <p>Mirage</p>
+            </div>
+          </div>
+
+          <div class="queue_song">
+            <p class="counter">01</p>
+            <div class="queue_song_img"><img src="/Photos/newimage.jpg" alt="" /></div>
+            <div class="queue_song_name">
+              <p>Mirage</p>
+            </div>
+          </div>
+
+          <div class="queue_song">
+            <p class="counter">01</p>
+            <div class="queue_song_img"><img src="/Photos/newimage.jpg" alt="" /></div>
+            <div class="queue_song_name">
+              <p>Mirage</p>
+            </div>
+          </div>
+
+          <div class="queue_song">
+            <p class="counter">01</p>
+            <div class="queue_song_img"><img src="/Photos/newimage.jpg" alt="" /></div>
+            <div class="queue_song_name">
+              <p>Mirage</p>
+            </div>
+          </div>
+
+          <div class="queue_song">
+            <p class="counter">01</p>
+            <div class="queue_song_img"><img src="/Photos/newimage.jpg" alt="" /></div>
+            <div class="queue_song_name">
+              <p>Mirage</p>
+            </div>
+          </div>
+
+        </div>
+     
+      </div>
+    </aside>
+  </div>
+</body>
+
+</html>
